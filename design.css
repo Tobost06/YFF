@@ -1,0 +1,64 @@
+body {
+    background-color: #f2f2f2; /*Endrer bakgrunnsfarge*/
+    font-family: Arial, sans-serif; /*Endrer font-familie + backup type hvis arial ikke er tilgjengelig*/
+  }
+
+    /* styles for small screens */
+    @media (max-width: 767px) {
+      /* adjust font size */
+      body {
+          font-size: 16px;        /*Denne koden ble skrevet av ChatGPT*/
+      }
+      /* make menu links stack vertically */
+      #menu ul li {
+          display: block;
+      }
+  }
+  
+  .full-bleed {
+    box-shadow: 0 0 0 100vmax #005F56;   /*Fjerner den lille hvite firkanten ved siden av nav-baren*/
+    clip-path: inset(0 -100vmax);
+}
+
+ul {
+  list-style-type: none;
+  margin: -0;
+  padding: -0;
+  overflow: hidden;   /*Koden til nav-baren*/
+  background-color: #005F56;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ li {
+   float: left; /*Gjør at innholdet i nav-baren flyter til venstre av skjermen*/
+}
+
+ li a {
+  display: block;
+  color: white;
+  text-align: center; /*Koden til hvert av nav-bar elementene*/
+  padding: 14px 16px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+li a:hover:not(.active) { /*Koden til hvert av nav-bar elementene som musepekeren ikke er over*/
+   background-color: #004b43;
+}
+ 
+li a.active { /*Koden til hvert av nav-bar elementene som musepekeren er over*/
+   background-color: #477b82;
+}
+
+@media screen and (max-width: 767px) {
+  #main {
+    grid-template-columns: 1fr;   /*Denne koden ble skrevet av ChatGPT*/
+  }
+  #main3 {
+    float: left;
+    margin-top: 20px;
+  }
+}
