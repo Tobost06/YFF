@@ -35,7 +35,7 @@ ul {
    float: left; /*Gjør at innholdet i nav-baren flyter til venstre av skjermen*/
 }
 
- li a {
+li a {
   display: block;
   color: white;
   text-align: center; /*Koden til hvert av nav-bar elementene*/
@@ -51,6 +51,15 @@ li a:hover:not(.active) { /*Koden til hvert av nav-bar elementene som musepekere
  
 li a.active { /*Koden til hvert av nav-bar elementene som musepekeren er over*/
    background-color: #477b82;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #7e7e7e;
+  float: left;
+  width: 180px;
+  height: 360px;
+  padding-inline-start: 10px;
 }
 
 @media screen and (max-width: 767px) {
